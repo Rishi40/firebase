@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Examio</title>
+
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <a href="#" class="navbar-brand">Student Details</a>
+    </nav>
+    <div class="container">
+      <div class="container mt-5 card card-body p-4">
+        <h4 class="text-center">Student Details</h4>
+        <div class="form-group">
+          <label for="Name">Full Name</label>
+          <input type="text" name="Full Name" id="userFullName" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" name="Email" id="userEmail" class="form-control">
+        </div>
+
+        <button id="submit" class="btn btn-primary">Submit Details</button>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script type="module" src="register.js"></script>
+  </body>
+</html>
